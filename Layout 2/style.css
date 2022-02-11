@@ -1,0 +1,38 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: 
+        'linha'
+        'linha2'
+        'linha3'
+    ;
+}
+
+.grid-item1 {
+    border: 2px solid black;
+    background-color: blueviolet;
+    grid-area: linha;
+}
+
+.grid-item2 {
+    border: 2px solid black;
+    background-color: red;
+    grid-area: linha2;
+
+}
+
+.grid-item3 {
+    border: 2px solid black;
+    background-color: orangered;
+    grid-area: linha3;
+}

@@ -1,0 +1,29 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: 
+        'coluna coluna1'
+    ;
+}
+
+.grid-item1 {
+    border: 2px solid black;
+    background-color: green;
+    grid-area: coluna;
+}
+
+.grid-item2 {
+    border: 2px solid black;
+    background-color: aquamarine;
+    grid-area: coluna1;
+}
